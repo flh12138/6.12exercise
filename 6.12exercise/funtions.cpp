@@ -95,6 +95,7 @@ void postprocess(cv::Mat& frame, std::vector<cv::Mat>& outs)
 		}
 	}
 
+
 	//非极大值抑制，去除置信度较小的检测结果
 	std::vector<int> indices;
 	cv::dnn::NMSBoxes(boxes, confidences, confThreshold, nmsThreshold, indices);

@@ -211,8 +211,8 @@ int openpose()
 {
 
 	//读入网络模型和权重文件
-	String modelTxt = "H:\\openpose_pose_coco.prototxt";
-	String modelBin = "H:\\caffe_models\\pose\\coco\\pose_iter_440000.caffemodel";
+	String modelTxt = "D:\\Install\\visual_studio\\opencv\\openpose_pose_coco.prototxt";
+	String modelBin = "D:\\Install\\visual_studio\\opencv\\openpose_caffe_models\\caffe_models\\pose\\coco\\pose_iter_440000.caffemodel";
 
 	cv::dnn::Net net = cv::dnn::readNetFromCaffe(modelTxt, modelBin);
 
